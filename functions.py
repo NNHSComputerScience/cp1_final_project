@@ -50,6 +50,8 @@ nums = (2, 4, 6, 8, 10, 12)
 nums_avg = avg(nums)
 print(nums_avg)
 
+help(avg)
+
 # CHALLENGE: Write functions to find the lowest number of an unsorted list of numbers and the highest number.
 def min(nums):
 	"""Returns the lowest number from a list of unsorted numbers"""
