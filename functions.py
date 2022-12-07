@@ -6,10 +6,12 @@ Description: Defining functions, calling functions, and returning values.
 
 # FUNCTION - a mini-program that accomplishes some task and may return a value.
 
-# function definition
+# function definition (creates a function; does not run it)
 def welcome():	# function header
 	print("Welcome to the program.") # function body
 
+welcome()  # function call
+welcome()
 welcome()
 print()
 
@@ -17,7 +19,7 @@ message = "Hello, world"
 
 # ARGUMENT - value passed into the parentheses of a function call
 # PARAMETER - variable used to accept arguments in a function; only exists inside the funciton body
-def excited_print(param):  # 'param' is the parameter
+def excited_print(param):  # 'param' variable is the parameter
 	print(str(param) + "!!!!!!!!!!!!!!!")
 
 excited_print(message)  # 'message' is the argument
@@ -32,13 +34,13 @@ def pig_print(word):
 pig_print("pig")
 pig_print("latin")
 
-# RETURN VALUE - value received back from a function
+# RETURN VALUE - value received back from a function call
 # DOCSTRING - first line of a function definition to document the purpose and uses of the function (uses a triple-quoted string)
 def avg(seq):
 	"""Accepts a sequence of numbers (seq) and returns the average."""
 	total = 0
-	for i in seq:
-		total += float(i)
+	for num in seq:
+		total += float(num)
 	average = total/len(seq)
 	return average
 
