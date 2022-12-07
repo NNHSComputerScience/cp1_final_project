@@ -5,8 +5,10 @@ Description: Defining functions, calling functions, and returning values.
 """
 
 # FUNCTION - a mini-program that accomplishes some task and may return a value.
-def welcome():
-	print("Welcome to the program.")
+
+# function definition
+def welcome():	# function header
+	print("Welcome to the program.") # function body
 
 welcome()
 print()
