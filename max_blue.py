@@ -34,25 +34,11 @@ def max_blue(image):
 # WRITE ON YOUR OWN - NO COPY/PASTE!
 def max_red(image):
 	"""Sets the red component of the RGB color of every pixel in the picture to the maximum value."""
-	pixels = image.load()
-	width = image.width 
-	height = image.height
-	for x in range(width): 
-		for y in range(height):
-			r, g, b = pixels[x, y]
-			image.putpixel((x, y), (255, g, b))
-	image.save("max_red.png", "png") 
+	pass 
 
 def max_green(image):
 	"""Sets the green component of the RGB color of every pixel in the picture to the maximum value."""
-	pixels = image.load()
-	width = image.width 
-	height = image.height
-	for x in range(width): 
-		for y in range(height):
-			r, g, b = pixels[x, y]
-			image.putpixel((x, y), (r, 255, b))
-	image.save("max_green.png", "png")  
+	pass
 
 # MAIN CODE
 
